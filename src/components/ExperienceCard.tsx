@@ -22,12 +22,12 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   
   const animationDelayClass = `animate-fade-in-delay-${delay}`;
   
-  return (
+  return (    
     <div 
-      className={`opacity-0 ${animationDelayClass} timeline-item`}
+      className={`opacity-1 ${animationDelayClass} timeline-item`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-    >
+    >      
       <div className="relative group">
         <div className="flex flex-col md:flex-row md:items-start gap-4 p-5 glass-card rounded-xl transition-all duration-300 hover:shadow-xl">
           <div className="shrink-0 w-16 h-16 bg-white/90 rounded-lg p-2 flex items-center justify-center shadow-sm">

@@ -122,8 +122,8 @@ const Contact: React.FC = () => {
                   <Mail className="w-5 h-5 text-antonio-blue mt-1 mr-3" />
                   <div>
                     <p className="font-medium text-antonio-navy">Email</p>
-                    <a href="mailto:contact@antonioTerreno.com" className="text-gray-600 hover:text-antonio-blue transition-colors">
-                      contact@antonioTerreno.com
+                    <a href="mailto:antonio@terreno.dev" className="text-gray-600 hover:text-antonio-blue transition-colors">
+                    antonio@terreno.dev
                     </a>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ const Contact: React.FC = () => {
               <h3 className="text-xl font-semibold mb-4 text-antonio-navy">Connect Online</h3>
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href="https://linkedin.com/in/antonioTerreno" 
+                  href="https://linkedin.com/in/antonioterreno" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#0077B5] text-white hover:scale-110 transition-transform"
@@ -158,7 +158,7 @@ const Contact: React.FC = () => {
                   <Linkedin size={20} />
                 </a>
                 <a 
-                  href="https://github.com/antonioTerreno" 
+                  href="https://github.com/aterreno" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#333] text-white hover:scale-110 transition-transform"

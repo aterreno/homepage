@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
@@ -40,7 +40,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#home" className="text-lg font-semibold text-antonio-navy">
-          Antonio<span className="text-antonio-blue font-bold">.Terreno</span>
+          Antonio<span className="text-antonio-blue font-bold">Terreno</span>
         </a>
 
         {/* Desktop Menu */}

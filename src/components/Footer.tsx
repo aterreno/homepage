@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="mb-4 md:mb-0">
             <a href="#home" className="text-lg font-semibold text-white">
-              Antonio<span className="text-antonio-light-blue font-bold">.Terreno</span>
+              Antonio<span className="text-antonio-light-blue font-bold">Terreno</span>
             </a>
           </div>
           
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
           
           <div className="mt-4 md:mt-0">
             <p className="text-sm flex items-center">
-              Made with <Heart size={14} className="mx-1 text-antonio-light-blue" /> in London
+              Made with <Heart size={14} className="mx-1 text-antonio-light-blue" /> in Brighton
             </p>
           </div>
         </div>
