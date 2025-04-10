@@ -35,84 +35,7 @@ const Contact: React.FC = () => {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Interested in working together or have a question? Let's connect!
           </p>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="glass-card p-8 rounded-xl">
-            <form onSubmit={handleSubmit}>
-              <div className="mb-6">
-                <label htmlFor="name" className="block text-antonio-navy font-medium mb-2">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-antonio-blue/50 focus:border-transparent transition-colors"
-                  placeholder="Your name"
-                  required
-                />
-              </div>
-              
-              <div className="mb-6">
-                <label htmlFor="email" className="block text-antonio-navy font-medium mb-2">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-antonio-blue/50 focus:border-transparent transition-colors"
-                  placeholder="Your email address"
-                  required
-                />
-              </div>
-              
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-antonio-navy font-medium mb-2">Message</label>
-                <textarea
-                  id="message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-antonio-blue/50 focus:border-transparent transition-colors"
-                  rows={5}
-                  placeholder="Your message"
-                  required
-                />
-              </div>
-              
-              <button
-                type="submit"
-                disabled={sending || sent}
-                className={`w-full py-3 px-6 rounded-lg font-medium flex items-center justify-center transition-all duration-300 ${
-                  sent 
-                    ? 'bg-green-500 text-white' 
-                    : 'bg-antonio-blue text-white hover:bg-antonio-navy'
-                }`}
-              >
-                {sending ? (
-                  <span className="flex items-center">
-                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                    </svg>
-                    Sending...
-                  </span>
-                ) : sent ? (
-                  <span className="flex items-center">
-                    Message Sent
-                    <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </span>
-                ) : (
-                  <span className="flex items-center">
-                    Send Message
-                    <Send size={16} className="ml-2" />
-                  </span>
-                )}
-              </button>
-            </form>
-          </div>
-          
+        </div>                          
           <div className="flex flex-col justify-between">
             <div className="glass-card p-8 rounded-xl mb-6">
               <h3 className="text-xl font-semibold mb-4 text-antonio-navy">Contact Information</h3>
@@ -122,8 +45,8 @@ const Contact: React.FC = () => {
                   <Mail className="w-5 h-5 text-antonio-blue mt-1 mr-3" />
                   <div>
                     <p className="font-medium text-antonio-navy">Email</p>
-                    <a href="mailto:antonio@terreno.dev" className="text-gray-600 hover:text-antonio-blue transition-colors">
-                    antonio@terreno.dev
+                    <a href="mailto:antonio.terreno[at]gmail.com" className="text-gray-600 hover:text-antonio-blue transition-colors">
+                    antonio.terreno[at]gmail.com
                     </a>
                   </div>
                 </div>
@@ -169,7 +92,7 @@ const Contact: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        
       </div>
     </section>
   );
