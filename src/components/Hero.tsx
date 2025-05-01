@@ -40,9 +40,8 @@ const Hero: React.FC = () => {
               <span className="text-gradient"> Terreno</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl">
-              Driving innovation and digital transformation at HSBC. Specialized in cloud computing, 
-              software engineering, and artificial intelligence with a proven track record of leading 
-              large-scale engineering teams.
+            Engineering executive with 20+ years' experience building high-performing teams, scalable platforms, and engineering functions from the ground up. I translate best practices into faster delivery, higher quality, and resilient systems that drive business growth.
+A pragmatic, context-driven leader who creates clarity from complexity, raises the bar on execution, and enables teams to deliver lasting impact at speed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
