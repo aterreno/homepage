@@ -32,17 +32,35 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
           <div className="w-full lg:w-3/5 animate-fade-in">
-            <div className="inline-block mb-3 px-3 py-1 bg-antonio-blue/10 text-antonio-blue rounded-full text-sm font-medium">
-              CTO & Technology Leader
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Antonio 
-              <span className="text-gradient"> Terreno</span>
+            <h1 className="text-5xl lg:text-6xl font-bold text-antonio-navy mb-6 leading-tight">
+              Engineering Executive<br />
+              <span className="text-gradient">Building High-Performing Teams</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl">
-            Engineering executive with 20+ years' experience building high-performing teams, scalable platforms, and engineering functions from the ground up. I translate best practices into faster delivery, higher quality, and resilient systems that drive business growth.
-A pragmatic, context-driven leader who creates clarity from complexity, raises the bar on execution, and enables teams to deliver lasting impact at speed.
+            
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              20+ years' experience building scalable platforms and engineering functions from the ground up. 
+              I translate best practices into faster delivery, higher quality, and resilient systems that drive business growth.
             </p>
+            
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-antonio-blue">$100M+</div>
+                <div className="text-sm text-gray-600">Budget Managed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-antonio-blue">80K+</div>
+                <div className="text-sm text-gray-600">Users Supported</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-antonio-blue">$30M+</div>
+                <div className="text-sm text-gray-600">Annual Savings</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-antonio-blue">25%</div>
+                <div className="text-sm text-gray-600">IRR Delivered</div>
+              </div>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#experience" 

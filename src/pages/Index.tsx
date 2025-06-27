@@ -3,6 +3,9 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
+import Projects from '../components/Projects';
+import Achievements from '../components/Achievements';
+import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import AnimatedBackground from '../components/AnimatedBackground';
@@ -11,25 +14,28 @@ import { motion, AnimatePresence } from 'framer-motion';
 const Index = () => {
   useEffect(() => {
     // Smooth scroll behavior for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const href = this.getAttribute('href');
-        if (!href) return;
-        
-        const targetElement = document.querySelector(href);
-        if (!targetElement) return;
-        
-        window.scrollTo({
-          top: targetElement.getBoundingClientRect().top + window.scrollY - 100,
-          behavior: 'smooth'
-        });
+    const handleAnchorClick = (e: Event) => {
+      e.preventDefault();
+      const target = e.target as HTMLAnchorElement;
+      const href = target.getAttribute('href');
+      if (!href) return;
+      
+      const targetElement = document.querySelector(href);
+      if (!targetElement) return;
+      
+      window.scrollTo({
+        top: targetElement.getBoundingClientRect().top + window.scrollY - 100,
+        behavior: 'smooth'
       });
+    };
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', handleAnchorClick);
     });
     
     return () => {
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.removeEventListener('click', function() {});
+        anchor.removeEventListener('click', handleAnchorClick);
       });
     };
   }, []);
@@ -46,8 +52,11 @@ const Index = () => {
         <AnimatedBackground />
         <Navbar />
         <Hero />
+        <Achievements />
         <Experience />
+        <Projects />
         <Skills />
+        <Testimonials />
         <Contact />
         <Footer />
       </motion.div>

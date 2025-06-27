@@ -14,47 +14,46 @@ const Experience: React.FC = () => {
   }, [isInView]);
 
   const experiences = [
-
     {
-      title: "Head of Software Engineering - Global Operations & Automation",
+      title: "Head of Software Engineering, Global Operations and Automation",
       company: "HSBC",
-      period: "Jan 2021 - Aprli 2025",
-      description: "Led software engineering and implementation of automation solutions across global operations.",
+      period: "Jan 2023 - April 2025",
+      description: "Transformed engineering performance for a 1000-person global operations function supporting 80,000 users with a $100M budget. Accelerated delivery by improving Release Frequency (+10%), halving Change Failure Rate, and cutting Incident volumes (–20%). Led a $9M AI innovation portfolio delivering $30M+ in projected annual savings.",
       logoUrl: 'images/hsbc-logo.jpg'    
     },
     {
-      title: "VP of Engineering",
+      title: "VP of Software Engineering",
       company: "Pharmaspectra",
-      period: "2019 - 2021",
-      description: "Led engineering teams and technology strategy, contributing to the successful sale of Pharmaspectra to IQVIA with a 25% IRR.",
+      period: "January 2021 - December 2022",
+      description: "Built and scaled technology capabilities supporting Pharmaspectra's growth and successful private equity exit. Led technology due diligence during acquisition by IQVIA, contributing to a 25% IRR for investors. Created UK-based centre of engineering excellence with cloud-native architecture on AWS.",
       logoUrl: "images/pharmaspectra-logo.jpg"
     },
     {
-      title: "CTO",
-      company: "theUp.co (ChargedUp/CleanedUp)",
-      period: "2018 - 2019",
-      description: "Oversaw technology strategy and implementation for innovative charging and sanitization solutions.",
+      title: "Chief Technology Officer (CTO)",
+      company: "TheUp.co (ChargedUp)",
+      period: "Jul 2019 - Dec 2020",
+      description: "Built technology function from scratch for pre-series A hospitality and IoT startup. Delivered end-to-end rebuild of ChargedUp MVP and launched ServedUp mobile food ordering platform. Architected scalable cloud-native systems on AWS with modern engineering practices.",
       logoUrl: "images/upco-logo.jpg"
     },
     {
-      title: "CTO",
-      company: "Labrador Ltd",
-      period: "2017 - 2018",
-      description: "Led technology development and strategy for innovative digital solutions.",
+      title: "Chief Technology Officer (CTO)",
+      company: "Labrador",
+      period: "Jul 2017 - Jul 2019",
+      description: "Created and led engineering function for intelligent energy platform from MVP to early scale. Drove product development, architected cloud-native solutions, and implemented DevOps practices. Played key role in securing seed funding through credible technology roadmaps.",
       logoUrl: "images/thelabrador-logo.jpg"
     },
     {
       title: "Partner",
       company: "Equal Experts",
-      period: "2015 - 2017",
-      description: "Collaborated on high-impact software engineering projects and strategic initiatives.",
+      period: "Jan 2012 - Jul 2017",
+      description: "Promoted to Partner in 2013. Led the Evolve Programme, hiring 20 consultants as permanent employees. Worked with clients including MergerMarket (digital transformation leading to Acuris group creation) and Kingfisher Group (leading ~20 senior engineers).",
       logoUrl: "images/equalexperts-logo.jpg"
     },
     {
-      title: "Senior Consultant",
+      title: "Lead Consultant",
       company: "ThoughtWorks",
-      period: "2012 - 2015",
-      description: "Provided expertise in software engineering, agile methodologies, and technology strategy.",
+      period: "Oct 2006 - Jun 2010",
+      description: "Senior technology consultant working across UK, SE Asia, Hong Kong, Ireland, and India. Delivered enterprise-scale solutions and pioneered agile methodologies for Fortune 500 clients.",
       logoUrl: "images/thoughtworks-logo.jpg"
     }
   ];
