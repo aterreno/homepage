@@ -65,7 +65,7 @@ A pragmatic, context-driven leader who creates clarity from complexity, raises t
               <div className="relative overflow-hidden rounded-2xl border border-white/40 bg-white/80 p-1.5 backdrop-blur-sm">
                 <img 
                   ref={profileImgRef}
-                  src="https://media.licdn.com/dms/image/v2/D4E03AQHiG43Atwiz8Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720208098625?e=1748476800&v=beta&t=emvphzwmhF24dDOk61Rp06suBHvv7lko_TAIYtImick" 
+                  src="images/official-avatar-2025.jpg" 
                   alt="Antonio Terreno" 
                   className="w-64 md:w-80 h-auto rounded-xl shadow-xl transition-all duration-500"
                 />

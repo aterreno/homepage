@@ -18,7 +18,7 @@ const Experience: React.FC = () => {
     {
       title: "Head of Software Engineering - Global Operations & Automation",
       company: "HSBC",
-      period: "Jan 2021 - Jan 2023",
+      period: "Jan 2021 - Aprli 2025",
       description: "Led software engineering and implementation of automation solutions across global operations.",
       logoUrl: 'images/hsbc-logo.jpg'    
     },
