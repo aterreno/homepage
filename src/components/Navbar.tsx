@@ -21,11 +21,15 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
+    { name: 'Achievements', href: '#achievements' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Contact', href: '#contact' },
-    { name: 'Blog', href: 'https://blog.terreno.dev/', external: true },
-    { name: 'Archives', href: 'https://blog-archives.terreno.dev/', external: true }
+    { name: 'Contact', href: '#contact' }
+  ];
+
+  const externalLinks = [
+    { name: 'Blog', href: 'https://blog.terreno.dev/', external: true }
   ];
 
   const toggleMobileMenu = () => {
@@ -51,8 +55,17 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              target={item.external ? "_blank" : undefined}
-              rel={item.external ? "noopener noreferrer" : undefined}
+              className="text-sm font-medium text-antonio-navy hover:text-antonio-blue transition-colors duration-300 hover-lift"
+            >
+              {item.name}
+            </a>
+          ))}
+          {externalLinks.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              target={item.external ? '_blank' : '_self'}
+              rel={item.external ? 'noopener noreferrer' : ''}
               className="text-sm font-medium text-antonio-navy hover:text-antonio-blue transition-colors duration-300 hover-lift"
             >
               {item.name}
@@ -78,8 +91,18 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                target={item.external ? "_blank" : undefined}
-                rel={item.external ? "noopener noreferrer" : undefined}
+                className="text-antonio-navy hover:text-antonio-blue font-medium py-2 transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ))}
+            {externalLinks.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                target={item.external ? '_blank' : '_self'}
+                rel={item.external ? 'noopener noreferrer' : ''}
                 className="text-antonio-navy hover:text-antonio-blue font-medium py-2 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
