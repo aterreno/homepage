@@ -15,6 +15,13 @@ const Experience: React.FC = () => {
 
   const experiences = [
     {
+      title: "Head of Architecture and Engineering",
+      company: "John Lewis Partnership",
+      period: "Sep 2025 - Present",
+      description: "Leading architecture and engineering strategy for the John Lewis Partnership, modernising retail platforms, scaling omnichannel capabilities, and mentoring cross-functional teams so they can ship faster and more safely.",
+      logoUrl: "images/jlp-logo.jpg"
+    },
+    {
       title: "Head of Software Engineering, Global Operations and Automation",
       company: "HSBC",
       period: "Jan 2023 - April 2025",
