@@ -1,0 +1,122 @@
+:root {
+  --text: #1f1f1d;
+  --muted: #6d6a64;
+  --bg: #fbfaf7;
+  --link: #1d4f9c;
+  --rule: #e3dfd7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e6e3dd;
+    --muted: #9b978f;
+    --bg: #171716;
+    --link: #8fb3ea;
+    --rule: #302e2b;
+  }
+}
+
+html {
+  font-size: 112.5%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 4rem 1.25rem 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+h2 {
+  margin: 2.75rem 0 1.25rem;
+  font-size: 1rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.work {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.work li {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  gap: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.work .when {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.1rem;
+}
+
+.work p {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 30rem) {
+  main {
+    padding-top: 2.5rem;
+  }
+
+  .work li {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
